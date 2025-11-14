@@ -1,1 +1,56 @@
+@import url('_resets.css');
+@import url('_fonts.css');
 @import "tailwindcss";
+
+/*define desktop first breakpoints*/
+@custom-variant 2xl (@media (width < 1380px));
+@custom-variant xl (@media (width < 1280px));
+@custom-variant lg (@media (width < 1024px));
+@custom-variant md (@media (width < 768px));
+@custom-variant sm (@media (width < 640px));
+@custom-variant xs (@media (width < 425px));
+
+@theme {
+    /*reset & define colors*/
+    --color-*: initial;
+    --color-transparent: transparent;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-red: #EF4444;
+    --color-yellow: #FDE047;
+    /*reset breakpoints*/
+    --breakpoint-*: initial;
+    /*reset & define font*/
+    --font-*: initial;
+    --font-inter: 'Inter', sans-serif;
+    /*reset & define font weight*/
+    --font-weight-*: initial;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-black: 900;
+    /*define font sizes*/
+    --text-h1: 100px;
+    --text-h1--line-height: 90%;
+    --text-h2: 48px;
+    --text-h2--line-height: 130%;
+    --text-h3: 24px;
+    --text-paragraph: 16px;
+    --text-subline: 28px;
+}
+
+/*font utilities*/
+@utility typo-h1 {
+    @apply text-h1 font-inter font-black italic uppercase;
+}
+@utility typo-h2 {
+    @apply text-h2 font-inter font-black italic uppercase;
+}
+@utility typo-h3 {
+    @apply text-h3 font-inter font-normal;
+}
+@utility typo-paragraph {
+    @apply text-paragraph font-inter font-normal;
+}
+@utility typo-subline {
+    @apply text-subline font-inter font-medium;
+}

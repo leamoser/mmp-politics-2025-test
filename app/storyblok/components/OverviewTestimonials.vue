@@ -5,8 +5,8 @@ const props = defineProps({
 </script>
 
 <template>
-  <section v-editable="blok" class="bg-yellow-300 py-20 px-12 flex flex-col gap-14">
-    <h1 class="text-center text-black font-black italic font-inter uppercase text-5xl">
+  <section v-editable="blok" class="bg-yellow py-20 px-12 flex flex-col gap-14">
+    <h1 class="text-center typo-h2">
       {{ blok.title }}
     </h1>
     <div class="flex items-center gap-10">
