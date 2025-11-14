@@ -10,7 +10,7 @@ const props = defineProps({
       {{ blok.title }}
     </h1>
     <div class="flex items-center gap-10">
-      <StoryblokComponent v-for="blok in blok.testimonials" :key="blok.uuid" :blok="blok.content" />
+      <StoryblokComponent v-for="blok in blok.testimonials" :key="blok._uid" :blok="blok.content"/>
     </div>
   </section>
 </template>

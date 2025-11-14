@@ -9,6 +9,6 @@ const props = defineProps({
     <h1 class="font-inter text-white text-8xl italic font-black uppercase max-w-3xl leading-none">
       {{ blok.title }}
     </h1>
-    <p class="font-inter text-red-200 text-3xl font-normal max-w-md">{{ blok.subline }}</p>
+    <p class="font-inter text-red-200 text-3xl font-normal max-w-md">{{ blok.subtitle }}</p>
   </section>
 </template>
